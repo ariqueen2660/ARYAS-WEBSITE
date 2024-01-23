@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimarlık Portföyü</title>
+
+    <script>
+        function createButton() {
+            // Yeni bir düğme öğesi oluştur
+            var button = document.createElement("button");
+
+            // Düğme metni ve özelliklerini ayarla
+            button.innerHTML = "Beni Tıkla!";
+            button.setAttribute("onclick", "buttonClick()");
+
+            // Düğmeyi body veya istediğiniz başka bir öğeye ekle
+            document.body.appendChild(button);
+        }
+
+        function buttonClick() {
+            // Düğme tıklandığında gerçekleşecek eylemi tanımla
+            console.log("Düğme tıklandı!");
+            // İhtiyaca göre buraya daha fazla işlev ekleyebilirsiniz
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="calismalarim.html">Çalışmalarım</a>
+    </nav>
+    <h1>Hoş Geldiniz!</h1>
+
+    <p>Bu benim mimarlık portföyümdür. Lütfen çalışmalarımı inceleyin.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/aryaa.kara" target="_blank">
+            <img src="inst.png" alt="Instagram" width="70" height="70">
+        </a>
+    </div>
+
+    <!-- Düğmeyi oluşturmak için JavaScript fonksiyonunu çağır -->
+    <script>
+        createButton();
+    </script>
+</body>
+</html>

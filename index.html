@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mimarlık Portföyü</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            background-image: url('https://r.resimlink.com/ukzA0FQWP.jpg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+            filter: brightness(0.7);
+        }
+
+        nav {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 18px;
+            transition: color 0.3s ease, box-shadow 0.3s ease; /* Parlama efekti için geçiş süresi ve yumuşaklığı */
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Parlama efekti için gölgelendirme */
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Başlık üzerine gölgelendirme */
+        }
+
+        p {
+            text-align: center;
+            color: #e4cece;
+            max-width: 600px;
+            margin: 500px auto 0;
+            align-self: center;
+        }
+
+        .social-icons img {
+            width: 70px;
+            height: 70px;
+            transform: scale(0.8);
+            transition: transform 0.3s ease-in-out, opacity 1s ease-in-out;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimda.html">Hakkımda</a>
+        <a href="calismalarim.html">Çalışmalarım</a>
+    </nav>
+    <h1>Hoş Geldiniz!</h1>
+
+    <p>Bu benim mimarlık portföyümdür. Lütfen çalışmalarımı inceleyin.</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/aryaa.kara" target="_blank">
+            <img src="inst.png" alt="Instagram">
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>
